@@ -34,7 +34,7 @@ const Jobs = ({ onBookmark, bookmarkedJobs }) => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [isLoading, hasMore]);
+  }, [isLoading, hasMore,handleScroll]);
 
   const isBookmarked = (jobId) => {
     return bookmarkedJobs.some((job) => job.id === jobId);
