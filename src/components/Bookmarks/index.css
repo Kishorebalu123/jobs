@@ -1,0 +1,65 @@
+.bookmarks-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 20px;
+  }
+  
+  .job-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s;
+  }
+  
+  .job-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .job-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .job-location, .job-salary, .job-phone {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .remove-button {
+    padding: 10px 15px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .remove-button:hover {
+    background-color: #cc0000;
+  }
+  
+  .empty-state {
+    text-align: center;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .bookmarks-container {
+      padding: 15px;
+    }
+  
+    .job-card {
+      padding: 15px;
+    }
+  
+    .remove-button {
+      padding: 8px 12px;
+    }
+  }
+  
